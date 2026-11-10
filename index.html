@@ -30,11 +30,30 @@ Select ONE Additional Feature to Add
 <meta charset="utf-8">
 
   <style>
-  h1{  font-family: "Pixelify Sans", sans-serif;}
-  #fist{  font-family: "Pixelify Sans", sans-serif;}
-#cap{font-family:Verdana, Geneva, Tahoma, sans-serif}
-#grime{font-family: "Press Start 2P", system-ui;}
+  h1{  font-family: "Pixelify Sans", sans-serif;color: deeppink;}
+  #fist{  font-family: "Pixelify Sans", sans-serif;color: rgb(0, 0, 0);}
+#cap{font-family:Verdana, Geneva, Tahoma, sans-serif;color: hsl(0, 0%, 0%);}
+#grime{font-family: "Press Start 2P", system-ui;color: rgb(0, 0, 0);}
+body {
+    background: url(background.gif) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
   </style>
 </head>
 <body>
@@ -102,6 +121,16 @@ Select ONE Additional Feature to Add
 
   </p>
   <br><br>
-
+<div class="row">
+  <div class="column">
+    <img src="skeleton.gif" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="skeleton.gif" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="skeleton.gif" alt="Mountains" style="width:100%">
+  </div>
+</div>
 </body>
 </html>
